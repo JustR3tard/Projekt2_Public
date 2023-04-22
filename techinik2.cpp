@@ -187,8 +187,7 @@ public:
         ruchy = 0;
         *name = *name + 1;
         *numer = *numer + 1;
-        //samolotki.push_back();
-        cout << x << " " << y << " " << ID << endl;
+        
     }
     
     ~samolot()
@@ -229,20 +228,13 @@ int main()
             samoloty.push_back(A);
 
        }
-        cout << "rozmiar tablicy to " << samoloty.size() << endl;
+       
         BlowUp(air, &samoloty);
         Map(air, &samoloty);
         MapVis(air, &samoloty);
-        for (int  i = 0; i < 10; i++)
-        {
-            for (int j = 0; j < 20; j++)
-            {
-                cout << air[i][j];
-            }
-            cout << endl;
-        }
+       
      
-        cout << samoloty.size() << endl;
+        
         while(!Pause)
         {
 
