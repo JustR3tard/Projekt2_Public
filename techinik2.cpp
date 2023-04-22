@@ -595,7 +595,7 @@ void BlowUp(int copy[][20], vector<samolot*>* samolotki)
         {
             if (copy[(*samolotki)[i]->y][(*samolotki)[i]->x - 1] != 0 || copy[(*samolotki)[i]->y][(*samolotki)[i]->x + 1] != 0 || copy[(*samolotki)[i]->y - 1][(*samolotki)[i]->x - 1] != 0) // gora
             {
-                cout << "samolot o indexie " << (*samolotki)[i]->ID << "zostal zniszczony" << endl;
+                cout << "samolot o indexie " << (*samolotki)[i]->ID << " zostal zniszczony" << endl;
                 copy[(*samolotki)[i]->y][(*samolotki)[i]->x] = 0;
                 delete (*samolotki)[i];
                 (*samolotki).erase((*samolotki).begin() + i);
